@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import {i18n} from '../immortal/I18n'
+import * as i18n from '../immortal/I18n'
 import '../styles/RightSideStyle.css'
 import {Button} from 'antd'
+import PropTypes from 'prop-types'
 
 const RightSide = () => {
 
@@ -16,3 +17,8 @@ const RightSide = () => {
 }
 
 export default RightSide
+
+RightSide.propTypes = {
+    weather: PropTypes.array,
+    data: PropTypes.array
+  }

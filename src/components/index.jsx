@@ -1,7 +1,6 @@
 import React from 'react'
-import '../styles/CorePageStyle.css'
-import LeftSide from "../components/LeftSide";
-import RightSide from "../components/RightSide";
+import LeftSide from "../connectors/LeftSideConnector";
+import RightSide from "../connectors/RightSideConnector";
 
 const App  = () => {
     return (
