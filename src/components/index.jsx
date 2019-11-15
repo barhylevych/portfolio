@@ -1,9 +1,10 @@
 import React from 'react'
 import {immortal} from "../immortal/immortal";
+import '../styles/CorePageStyle.css'
 
 const App  = () => {
     return (
-        <div> {immortal.title}</div>
+        <div className={'App'}><div> {immortal.title}</div></div>
     )
 }
 
