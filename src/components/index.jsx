@@ -1,12 +1,14 @@
 import React from 'react'
-import {i18n} from "../immortal/I18n";
 import '../styles/CorePageStyle.css'
+import LeftSide from "../components/LeftSide";
+import RightSide from "../components/RightSide";
 
 const App  = () => {
     return (
-        <div className={'App'}>
-            <a> {i18n.title}</a>
-        </div>
+        <>
+            <LeftSide/>
+            <RightSide/>
+        </>
     )
 }
 
