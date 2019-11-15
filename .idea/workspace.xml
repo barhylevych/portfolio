@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LeftSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSide.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/immortal/I18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/immortal/I18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/immortal/actions_immortals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/immortal/actions_immortals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redusers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redusers/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/CorePageStyle.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

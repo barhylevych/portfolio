@@ -4,10 +4,10 @@ import '../styles/RightSideStyle.css'
 import {Button} from 'antd'
 import PropTypes from 'prop-types'
 
-const RightSide = () => {
+const RightSide = (props) => {
 
     const [click, setClick] = useState(false)
-
+    console.log(props.st)
     return (
         <div className={'RightSide'}>
             <Button onClick={() => {setClick(!click)}}> Press me! </Button>
@@ -20,5 +20,4 @@ export default RightSide
 
 RightSide.propTypes = {
     weather: PropTypes.array,
-    data: PropTypes.array
-  }
+}

@@ -1,21 +1,23 @@
 import {GET_WEATHER, GET_DATE} from "../immortal/actions_immortals";
+import {combineReducers} from "redux";
 
 const initialState = {
-    weather: [],
-    date: [],
+    weather: {},
 }
 
 function getters (state = initialState, action) {
     switch (action.type) {
         case GET_WEATHER:
-            const weather = {...state}.weather.push('hello')
-            return {...state, weather}
+            console.log('weather')
+            return {...state}
         case GET_DATE:
-            const moment = {...state}.date.push('11.22.2019')
-            return {...state, moment}
+            console.log('moment')
+            return {...state}
         default:
+            console.log('state', state)
             return state
     }
 }
 
-export default getters
+const rootReducer = combineReducers({getters})
+export default rootReducer

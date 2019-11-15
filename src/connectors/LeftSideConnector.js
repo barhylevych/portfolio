@@ -4,9 +4,12 @@ import '../styles/LeftSideStyle.css'
 import {getDate, getWeather} from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
-const mapDispatchToProps = {
-    weather: getWeather(),
-    date: getDate()
-}
+const mapStateToProps = (state) => ({
+    st: state.weather
+})
 
-export default connect(null, mapDispatchToProps)(LeftSide)
+const mapDispatchToProps = dispatch => ({
+    weather: () => dispatch(getWeather())
+})
+
+export default connect(mapStateToProps , mapDispatchToProps)(LeftSide)

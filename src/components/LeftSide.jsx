@@ -4,11 +4,11 @@ import '../styles/LeftSideStyle.css'
 import PropTypes from 'prop-types'
 
 const LeftSide = (props) => {
-    console.log(props.weather)
+    console.log(props)
 
     return(
-        <div className={'LeftSide'}>
-            <p> {i18n.title}</p>
+        <div className={'LeftSide'} onClick={props.weather}>
+            <p > {i18n.title}</p>
         </div>
     )
 }
@@ -16,6 +16,6 @@ const LeftSide = (props) => {
 export default LeftSide
 
 LeftSide.propTypes = {
-    weather: PropTypes.array,
+    weather: PropTypes.func,
     data: PropTypes.array
   }
