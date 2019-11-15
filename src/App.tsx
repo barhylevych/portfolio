@@ -6,7 +6,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <p>
-          Привет Катюха
+          Привет Катюха!
         </p>
       </header>
     </div>
