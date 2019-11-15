@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redusers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redusers/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

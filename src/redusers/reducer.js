@@ -1,11 +1,10 @@
 import {GET_WEATHER, GET_DATE} from "../immortal/actions_immortals";
-import {combineReducers} from "redux";
 
 const initialState = {
     weather: {},
 }
 
-function getters (state = initialState, action) {
+function gettersFromAPI(state = initialState, action) {
     switch (action.type) {
         case GET_WEATHER:
             console.log('weather')
@@ -19,5 +18,4 @@ function getters (state = initialState, action) {
     }
 }
 
-const rootReducer = combineReducers({getters})
-export default rootReducer
+export default gettersFromAPI

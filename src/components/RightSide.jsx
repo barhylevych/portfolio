@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 const RightSide = (props) => {
 
     const [click, setClick] = useState(false)
-    console.log(props.st)
+
     return (
         <div className={'RightSide'}>
             <Button onClick={() => {setClick(!click)}}> Press me! </Button>
@@ -16,8 +16,8 @@ const RightSide = (props) => {
     )
 }
 
-export default RightSide
-
 RightSide.propTypes = {
     weather: PropTypes.array,
 }
+
+export default RightSide
