@@ -1,7 +1,5 @@
 
-export const immortal = {
+export const i18n = {
     title: 'Портфолио Баргилевича Олександра'
 }
-
-
 

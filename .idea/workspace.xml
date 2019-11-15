@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/styles/CorePageStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/immortal/immortal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/immortal/I18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/CorePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/CorePageStyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

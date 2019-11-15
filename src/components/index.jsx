@@ -1,10 +1,12 @@
 import React from 'react'
-import {immortal} from "../immortal/immortal";
+import {i18n} from "../immortal/I18n";
 import '../styles/CorePageStyle.css'
 
 const App  = () => {
     return (
-        <div className={'App'}><div> {immortal.title}</div></div>
+        <div className={'App'}>
+            <a> {i18n.title}</a>
+        </div>
     )
 }
 
