@@ -1,10 +1,13 @@
 import React from 'react'
-import {immortal} from "../immortal/immortal";
-import '../styles/CorePageStyle.css'
+import LeftSide from "../connectors/LeftSideConnector";
+import RightSide from "../connectors/RightSideConnector";
 
 const App  = () => {
     return (
-        <div className={'App'}><div> {immortal.title}</div></div>
+        <>
+            <LeftSide/>
+            <RightSide/>
+        </>
     )
 }
 
