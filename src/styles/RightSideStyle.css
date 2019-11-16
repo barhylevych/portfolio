@@ -1,6 +1,12 @@
+.right-side{
+    background: #fff;
+    width: 65%;
+    margin:  5%  5% 0 0;
+    border: 6px solid lightslategray;
+    border-radius: 25px;
+    }
 
-.RightSide button{
-    display: block;
+.right-side button{
     color: white;
     padding-bottom: 20px;
     background-color:transparent;
@@ -10,9 +16,8 @@
 }
 
 
-.RightSide a{
-    display: block;
-    color: #ffffff;
+.right-side p{
+    color: #000000;
     padding-top: 100px;
     font-size: 35px;
     text-align: center;

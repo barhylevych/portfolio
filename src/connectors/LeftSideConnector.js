@@ -5,11 +5,11 @@ import {getWeather} from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
 const mapStateToProps = (state) => ({
-    st: state.weather
+    weather: state.weather
 })
 
-const mapDispatchToProps = dispatch => ({
-    weather: () => dispatch(getWeather())
+const mapDispatchToProps = ({
+    weather: () => getWeather(),
 })
 
-export default connect(mapStateToProps , mapDispatchToProps)(LeftSide)
+export default connect(mapStateToProps, mapDispatchToProps)(LeftSide)
