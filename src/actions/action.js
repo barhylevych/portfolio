@@ -1,10 +1,14 @@
-import { GET_DATE, GET_WEATHER } from "../immortal/actions_immortals";
+import {GET_WEATHER, STOP_LOADING, SHOW_LOADING} from "../immortal/actions_immortals";
 
-export function getDate() {
-  return { type: GET_DATE }
+export function stopLoading() {
+    return {type: STOP_LOADING}
+}
+
+export function startLoading() {
+    return {type: SHOW_LOADING}
 }
 
 export function getWeather() {
-  return { type: GET_WEATHER }
+    return {type: GET_WEATHER}
 }
 
