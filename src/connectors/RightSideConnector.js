@@ -5,7 +5,7 @@ import {getWeather} from "../actions/action";
 import RightSide from "../components/RightSide";
 
 const mapStateToProps = (state) => ({
-    st: state
+    keyAPI: state.keyAPI
 })
 
 const mapDispatchToProps = dispatch => {

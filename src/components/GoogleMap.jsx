@@ -1,29 +1,23 @@
-import React from 'react';
-import GoogleMapReact from 'google-map-react';
-
-const Location = ({ text }) =>
-    <div>
-        {text}
-    </div>;
+import React from "react";
+import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+import PropTypes from 'prop-types'
 
 const GoogleMap = ({size,center, zoom, ...props}) => {
-
-        return (
-            <div style={{height: size.height, width: size.width}}>
-                <GoogleMapReact
-                    // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
-                    defaultCenter={center}
-                    defaultZoom={zoom}
-                >
-                    <Location
-                        lat={center.lat}
-                        lng={center.lng}
-                        text="My Location"
-                    />
-                </GoogleMapReact>
-            </div>
-        );
-    }
+    const Map = ReactMapboxGl({
+        accessToken: props.keyAPI});
+return(
+    <Map
+        style="mapbox://styles/mapbox/streets-v9"
+        containerStyle={{
+            height: size.height,
+            width: size.width
+        }}
+    >
+        <Layer type="symbol" id="marker" layout={{'icon-image': 'marker-15'}}>
+            <Feature coordinates={[-0.481747846041145, 51.3233379650232]}/>
+        </Layer>
+    </Map>
+)}
 
 GoogleMap.defaultProps = {
     center: {
@@ -37,4 +31,8 @@ GoogleMap.defaultProps = {
     }
 }
 
-export default GoogleMap;
+GoogleMap.propTypes = {
+    keyAPI: PropTypes.string
+}
+
+export default GoogleMap
