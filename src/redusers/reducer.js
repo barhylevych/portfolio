@@ -2,7 +2,8 @@ import {GET_WEATHER, SHOW_LOADING, STOP_LOADING} from "../immortal/actions_immor
 
 const initialState = {
     weather: {},
-    loading: false
+    loading: false,
+    keyAPI: 'pk.eyJ1IjoiYmFyaHlsZXZ5Y2giLCJhIjoiY2szMWVkNXJpMDdsaDNsbWpscjZveHczaSJ9.iz0Tb0UTzZ1_Rt0chVmooA',
 }
 
 function gettersFromAPI (state = initialState, action) {
