@@ -1,6 +1,6 @@
 import React from "react";
 import {i18n} from '../immortal/I18n'
-import '../styles/LeftSideStyle.css'
+//import '../styles/LeftSideStyle.css'
 import PropTypes from 'prop-types'
 import { Icon } from "antd"
 

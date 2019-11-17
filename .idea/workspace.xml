@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/process.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GoogleMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GoogleMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSide.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/RightSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightSide.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/RightSideConnector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redusers/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redusers/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/immortal/I18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/immortal/I18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/RightSideStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/RightSideStyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +27,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -53,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../git" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -80,6 +85,17 @@
   </component>
   <component name="RunManager" selected="npm.predeploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -116,8 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>

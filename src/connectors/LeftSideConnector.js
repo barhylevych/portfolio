@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import '../styles/LeftSideStyle.css'
+//import '../styles/LeftSideStyle.css'
 import {getWeather} from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
