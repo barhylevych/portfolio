@@ -1,25 +1,20 @@
 import React from 'react'
 import LeftSide from "../connectors/LeftSideConnector";
 import RightSide from "../connectors/RightSideConnector";
-import '../styles/Header.css'
+import '../styles/Header.sass'
 import {i18n} from '../immortal/I18n'
-import {Icon} from "antd";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAddressBook} from '@fortawesome/free-solid-svg-icons'
-
-const fontAwesome = <FontAwesomeIcon icon={faAddressBook}/>
+import { faCode, faNewspaper, faShareAlt } from '@fortawesome/free-solid-svg-icons'
 
 const App = () => {
     return (
         <div className={'project'}>
             <header>
-                <p className={'logo'}> {<Icon type="bug"/>}{i18n.SURNAME} </p>
+                <p className={'logo'}> <FontAwesomeIcon icon={faCode}/>{i18n.SURNAME} </p>
                 <nav>
                     <ul className={'header'}>
-                        {/*<div className={'project-header-block'}>*/}
-                        <li><p> {<Icon type="contacts"/>}{i18n.CONTACT} </p></li>
-                        <li><p> {<Icon type="link"/>}{i18n.SOCIAL} </p></li>
-                        {/*</div>*/}
+                        <li><p> {<FontAwesomeIcon icon={faNewspaper}/>}{i18n.CONTACT} </p></li>
+                        <li><p> {<FontAwesomeIcon icon={faShareAlt}/>}</p></li>
                     </ul>
                 </nav>
             </header>

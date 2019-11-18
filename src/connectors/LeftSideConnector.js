@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
-//import '../styles/LeftSideStyle.css'
-import {getWeather} from "../actions/action";
+//import '../styles/LeftSideStyle.sass'
+import { getWeather, startLoading } from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
 const mapStateToProps = (state) => ({
@@ -9,7 +9,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = ({
-    weather: () => getWeather(),
+    getWeather,
+    startLoading,
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LeftSide)
