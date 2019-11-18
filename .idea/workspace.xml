@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/LeftSideStyle.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftSide.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/connectors/LeftSideConnector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/LeftSideStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Header.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.predeploy" />
         <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573813808459</updated>
       <workItem from="1573813809790" duration="3034000" />
-      <workItem from="1574060771271" duration="9734000" />
+      <workItem from="1574060771271" duration="10725000" />
     </task>
     <servers />
   </component>
