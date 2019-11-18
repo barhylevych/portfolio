@@ -1,8 +1,32 @@
 .left-side
-      background-image: url("../styles/img/lines.png")
-      display: block
+  background-image: url("../styles/img/lines.png")
+  display: flex
+  width: 100%
+  height: 100vh
+
+  .left-side-body
+    width: 80%
+    height: 80%
+    top: 50%
+    position: absolute
+    left: 50%
+    border: 3px solid black
+    border-radius: 30%
+    transform: translate(-50%, -50%)
+    display: inline-flex
+
+    img
+      align-self: center
+      border-radius: 25%
+      height: 50%
+      width: 30%
+      margin: 40px
+
+    .left-side-info
+      padding: 10%
+      align-self: center
       text-align: center
-      border: 1px solid black
+      width: inherit
 
 
 /*    background: #fff ;*/
