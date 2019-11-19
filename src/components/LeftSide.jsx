@@ -7,16 +7,22 @@ import {Icon} from "antd"
 const bodyInfo = (activity, key) => <p key={key} className={'left-side-text'}>{activity}</p>
 
 const LeftSide = (props) => {
+
+    const locateTo = () => props.redirect('github')
+
     return (
         <div className={'left-side'}>
-            <div className={'left-side-body'}>
-                <img src={i18n.IMAGE} alt={'There should be picture'}/>
+            <div className={'body'}>
                 <div className={'left-side-info'}>
+                    <img src={i18n.IMAGE} alt={i18n.ALT_PICTURE}/>
+                    <br/>
+                    <Icon type="instagram" onClick={() => locateTo('instagram')} />
+                    <Icon type="github" onClick={() => locateTo('github')} />
+                </div>
+                <div className={'right-side-info'}>
                     {[i18n.NAME, i18n.SURNAME, i18n.ACTIVITY].map((element, index) => bodyInfo(element, index))}
-                    <Icon type="home"/><span>Kiev</span><br/>
+                    <section><Icon type="home"/><span>Kiev</span><br/></section>
                     <Icon type="code"/><span>React js</span><br/>
-                    <Icon type="instagram"/>
-                    <Icon type="github"/>
                 </div>
             </div>
         </div>
@@ -27,6 +33,7 @@ LeftSide.propTypes = {
     weather: PropTypes.object,
     startLoading: PropTypes.func,
     stopLoading: PropTypes.func,
+    redirect: PropTypes.func
 }
 
 export default LeftSide

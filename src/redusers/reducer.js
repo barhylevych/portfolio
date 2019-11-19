@@ -1,4 +1,4 @@
-import {GET_WEATHER, SHOW_LOADING, STOP_LOADING} from "../immortal/actions_immortals";
+import {GET_WEATHER, SHOW_LOADING, STOP_LOADING, REDIRECT} from "../immortal/actions_immortals";
 
 const initialState = {
     weather: {},
@@ -16,6 +16,16 @@ function gettersFromAPI (state = initialState, action) {
         case STOP_LOADING:
             const stateCopy_2 = {...state}.loading = false
             return {...stateCopy_2}
+        case REDIRECT:
+            switch (action.body) {
+                case ('instagram'):
+                    break
+                case ('github'):
+                    window.location.href = 'https://github.com'
+                    break
+                default:
+            }
+            return {...state}
         default:
             return state
     }
