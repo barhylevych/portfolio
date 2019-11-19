@@ -1,35 +1,39 @@
 import React from "react";
 import {i18n} from '../immortal/I18n'
-//import '../styles/LeftSideStyle.css'
+import '../styles/LeftSideStyle.sass'
 import PropTypes from 'prop-types'
-import { Icon } from "antd"
+import {Icon} from "antd"
 
-
-const bodyInfo =( activity ) => {
-    const title = activity + '_TITLE'
-    return (
-        <div className={'left-side-text'}>
-        <span>{i18n[activity]}</span>
-        </div>
-    )
-}
+const bodyInfo = (activity, key) => <p key={key} className={'left-side-text'}>{activity}</p>
 
 const LeftSide = (props) => {
+
+    const locateTo = (where) => props.redirect(where)
+
     return (
-        <div className={'left-side'} onClick={props.weather}>
-            <img className={'left-side-img'} src={i18n.IMAGE} alt={'hell'}/>
-            {['NAME', 'SURNAME', 'ACTIVITY'].map((element)=> bodyInfo(element))}
-            <Icon type="home" /><span>Kiev</span><br/>
-            <Icon type="code" /><span>React js</span><br/>
-            <Icon type="instagram" />
-            <Icon type="github" />
+        <div className={'left-side'}>
+            <div className={'body'}>
+                <div className={'left-side-info'}>
+                    <img src={i18n.IMAGE} alt={i18n.ALT_PICTURE}/>
+                    <br/>
+                    <Icon type="instagram" onClick={() => locateTo('instagram')} />
+                    <Icon type="github" onClick={() => locateTo('github')} />
+                </div>
+                <div className={'right-side-info'}>
+                    {[i18n.NAME, i18n.SURNAME, i18n.ACTIVITY].map((element, index) => bodyInfo(element, index))}
+                    <Icon type="home" onClick={props.stopLoading } /><span>Kiev</span><br/>
+                    <Icon type="code" onClick={props.startLoading }/><span>React js</span><br/>
+                </div>
+            </div>
         </div>
     )
 }
 
 LeftSide.propTypes = {
-    weather: PropTypes.func,
-    data: PropTypes.array,
+    weather: PropTypes.object,
+    startLoading: PropTypes.func,
+    stopLoading: PropTypes.func,
+    redirect: PropTypes.func
 }
 
 export default LeftSide

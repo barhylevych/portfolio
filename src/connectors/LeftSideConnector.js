@@ -1,15 +1,17 @@
 import React from "react";
 import {connect} from "react-redux";
-//import '../styles/LeftSideStyle.css'
-import {getWeather} from "../actions/action";
+import {getWeather, startLoading, redirect, stopLoading} from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
 const mapStateToProps = (state) => ({
     weather: state.weather
 })
 
-const mapDispatchToProps = ({
-    weather: () => getWeather(),
+const mapDispatchToProps = (dispatch) => ({
+    getWeather: () => dispatch(getWeather()),
+    startLoading: () => dispatch(startLoading()),
+    stopLoading: () => dispatch(stopLoading()),
+    redirect: action => dispatch(redirect(action)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(LeftSide)

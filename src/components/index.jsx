@@ -1,25 +1,35 @@
 import React from 'react'
 import LeftSide from "../connectors/LeftSideConnector";
 import RightSide from "../connectors/RightSideConnector";
-import '../styles/Header.css'
+import '../styles/Header.sass'
+import {connect} from "react-redux";
 import {i18n} from '../immortal/I18n'
-import {Icon} from "antd";
+import {startLoading} from "../actions/action";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAddressBook} from '@fortawesome/free-solid-svg-icons'
+import { faCode, faNewspaper, faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import Loading from "../components/Loading";
 
-const fontAwesome = <FontAwesomeIcon icon={faAddressBook}/>
+const mapStateToProps = (state) => ({
+    loading: state.loading
+})
 
-const App = () => {
+const mapDispatchToProps = (dispatch) => (
+    {
+        startLoading: () => dispatch(startLoading())
+    })
+
+export default connect(mapStateToProps, mapDispatchToProps)( (props) => {
+    const loading = props.loading
+    console.log(loading)
     return (
-        <div className={'project'}>
+        <div className={!loading ? 'project': 'project__loading'}>
+            {loading && <label className={'loading'}><Loading/></label>}
             <header>
-                <p className={'logo'}> {<Icon type="bug"/>}{i18n.SURNAME} </p>
+                <p className={'logo'}> <FontAwesomeIcon icon={faCode}/>{i18n.SURNAME} </p>
                 <nav>
                     <ul className={'header'}>
-                        {/*<div className={'project-header-block'}>*/}
-                        <li><p> {<Icon type="contacts"/>}{i18n.CONTACT} </p></li>
-                        <li><p> {<Icon type="link"/>}{i18n.SOCIAL} </p></li>
-                        {/*</div>*/}
+                        <li><p> {<FontAwesomeIcon icon={faNewspaper}/>}{i18n.CONTACT} </p></li>
+                        <li><p> {<FontAwesomeIcon icon={faShareAlt}/>}</p></li>
                     </ul>
                 </nav>
             </header>
@@ -27,6 +37,4 @@ const App = () => {
             <RightSide/>
         </div>
     )
-}
-
-export default App
+})
