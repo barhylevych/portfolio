@@ -13,6 +13,6 @@ export function getWeather() {
 }
 
 export function redirect (action) {
-    return {type: REDIRECT, action: action}
+    return {type: REDIRECT, body: action}
 }
 

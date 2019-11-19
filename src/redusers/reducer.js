@@ -20,7 +20,7 @@ function gettersFromAPI (state = initialState, action) {
                 case ('instagram'):
                     break
                 case ('github'):
-                    window.location.href = 'https://github.com'
+                    window.location.href = 'https://github.com/barhylevych'
                     break
                 default:
             }
