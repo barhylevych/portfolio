@@ -8,7 +8,7 @@ const bodyInfo = (activity, key) => <p key={key} className={'left-side-text'}>{a
 
 const LeftSide = (props) => {
 
-    const locateTo = () => props.redirect('github')
+    const locateTo = (where) => props.redirect(where)
 
     return (
         <div className={'left-side'}>
@@ -21,8 +21,8 @@ const LeftSide = (props) => {
                 </div>
                 <div className={'right-side-info'}>
                     {[i18n.NAME, i18n.SURNAME, i18n.ACTIVITY].map((element, index) => bodyInfo(element, index))}
-                    <section><Icon type="home"/><span>Kiev</span><br/></section>
-                    <Icon type="code"/><span>React js</span><br/>
+                    <Icon type="home" onClick={props.stopLoading } /><span>Kiev</span><br/>
+                    <Icon type="code" onClick={props.startLoading }/><span>React js</span><br/>
                 </div>
             </div>
         </div>

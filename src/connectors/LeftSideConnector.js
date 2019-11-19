@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import { getWeather, startLoading, redirect } from "../actions/action";
+import {getWeather, startLoading, redirect, stopLoading} from "../actions/action";
 import LeftSide from "../components/LeftSide";
 
 const mapStateToProps = (state) => ({
@@ -8,8 +8,9 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    getWeather: dispatch(getWeather()),
-    startLoading: dispatch(startLoading()),
+    getWeather: () => dispatch(getWeather()),
+    startLoading: () => dispatch(startLoading()),
+    stopLoading: () => dispatch(stopLoading()),
     redirect: action => dispatch(redirect(action)),
 })
 
