@@ -3,7 +3,7 @@
   height: 75px;
   margin: 0;
   background: transparent;
-  border-top: 4px solid #009688;
+  border-top: 4px solid #000000;
   border-right: 4px solid transparent;
   border-radius: 50%;
   -webkit-animation: 1s spin linear infinite;

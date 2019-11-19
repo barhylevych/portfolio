@@ -22,7 +22,7 @@ export default connect(mapStateToProps, mapDispatchToProps)( (props) => {
     const loading = props.loading
     console.log(loading)
     return (
-        <div className={!loading ? 'project': 'project__loading'}>
+        <div className={'project'}>
             {loading && <label className={'loading'}><Loading/></label>}
             <header>
                 <p className={'logo'}> <FontAwesomeIcon icon={faCode}/>{i18n.SURNAME} </p>

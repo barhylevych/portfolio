@@ -1,4 +1,3 @@
-import {Icon} from "antd";
 import React from "react";
 import '../styles/loading.css'
 
