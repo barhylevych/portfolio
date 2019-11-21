@@ -1,4 +1,6 @@
-.left-side
+@import "../../utils/utils"
+
+.first-view
   background-image: url("../../utils/images/lines.png")
   display: flex
   width: 100%
@@ -10,13 +12,14 @@
     top: 50%
     position: absolute
     left: 50%
-    border: 3px solid black
-    border-radius: 30%
+    border: 3px solid $border
+    border-radius: 15%
     transform: translate(-50%, -50%)
     display: inline-flex
 
     .left-side-info
-      padding-right: 10%
+      height: 100%
+      padding-right: 5%
       align-self: center
       text-align: center
       width: inherit
@@ -29,12 +32,31 @@
         align-self: center
         border-radius: 25%
         height: 50%
-        width: 30%
-        margin: 40px
+        width: 50%
+        padding: 40px
+
+      .img-block
+        display: flex
+        width: fit-content
+        justify-content: center
+        width: 100%
+
+
+
+        & > div
+          align-self: center
+          text-overflow: ellipsis
+          width: 30%
+          text-align: left
+          font-size: small
 
     .right-side-info
+      border-left: 3px solid $border
+      height: 80%
+      padding-left: 20px
       align-self: center
       width: inherit
       font-size: x-large
+      text-align: left
 
 
