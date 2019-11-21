@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import {i18n} from '../immortal/I18n'
-import '../styles/RightSideStyle.css'
+import {i18n} from '../../utils/I18n'
+import './style.css'
 import {Button} from 'antd'
 import PropTypes from 'prop-types'
-import GoogleMap from '../components/GoogleMap'
+import Map from '../Map'
 
-const RightSide = (props) => {
+const Right = (props) => {
 
     const [click, setClick] = useState(false)
 
@@ -21,9 +21,9 @@ const RightSide = (props) => {
     )
 }
 
-RightSide.propTypes = {
+Right.propTypes = {
     weather: PropTypes.object,
     keyAPI: PropTypes.string,
 }
 
-export default RightSide
+export default Right

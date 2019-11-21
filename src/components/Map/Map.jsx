@@ -2,7 +2,7 @@ import React from "react";
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import PropTypes from 'prop-types'
 
-const GoogleMap = ({size,center, zoom, ...props}) => {
+const Map = ({size,center, zoom, ...props}) => {
     const Map = ReactMapboxGl({
         accessToken: props.keyAPI});
 return(
@@ -19,7 +19,7 @@ return(
     </Map>
 )}
 
-GoogleMap.defaultProps = {
+Map.defaultProps = {
     center: {
         lat: 59.95,
         lng: 320.33
@@ -31,8 +31,10 @@ GoogleMap.defaultProps = {
     }
 }
 
-GoogleMap.propTypes = {
-    keyAPI: PropTypes.string
+Map.propTypes = {
+    keyAPI: PropTypes.string,
+    zoom: PropTypes.number,
+    size: PropTypes.object
 }
 
-export default GoogleMap
+export default Map

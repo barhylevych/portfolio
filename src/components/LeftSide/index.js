@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getWeather, startLoading, redirect, stopLoading} from "../actions/action";
-import LeftSide from "../components/LeftSide";
+import {getWeather, startLoading, redirect, stopLoading} from "../../actions/action";
+import LeftSide from "./Left";
 
 const mapStateToProps = (state) => ({
     weather: state.weather

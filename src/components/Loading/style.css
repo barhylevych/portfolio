@@ -1,9 +1,9 @@
 .nb-spinner {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   margin: 0;
   background: transparent;
-  border-top: 4px solid #000000;
+  border-top: 4px solid darkslategray;
   border-right: 4px solid transparent;
   border-radius: 50%;
   -webkit-animation: 1s spin linear infinite;

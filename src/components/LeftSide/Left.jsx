@@ -1,6 +1,6 @@
 import React from "react";
-import {i18n} from '../immortal/I18n'
-import '../styles/LeftSideStyle.sass'
+import {i18n} from '../../utils/I18n'
+import './style.sass'
 import PropTypes from 'prop-types'
 import {Icon} from "antd"
 
@@ -16,8 +16,8 @@ const LeftSide = (props) => {
                 <div className={'left-side-info'}>
                     <img src={i18n.IMAGE} alt={i18n.ALT_PICTURE}/>
                     <br/>
-                    <Icon type="instagram" onClick={() => locateTo('instagram')} />
-                    <Icon type="github" onClick={() => locateTo('github')} />
+                    <Icon type="instagram" onClick={() => locateTo(i18n.INSTAGRAM)} />
+                    <Icon type="github" onClick={() => locateTo(i18n.GITHUB)} />
                 </div>
                 <div className={'right-side-info'}>
                     {[i18n.NAME, i18n.SURNAME, i18n.ACTIVITY].map((element, index) => bodyInfo(element, index))}

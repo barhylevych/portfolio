@@ -1,12 +1,10 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getWeather, startLoading, stopLoading} from "../actions/action";
-import RightSide from "../components/RightSide";
+import {startLoading, stopLoading} from "../../actions/action";
+import Right from "./Right";
 
-const mapStateToProps = state => (
-    {
+const mapStateToProps = state => ({
         weather: state.weather,
-        keyAPI: state.keyAPI,
     })
 
 const mapDispatchToProps = dispatch => {
@@ -16,4 +14,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RightSide)
+export default connect(mapStateToProps, mapDispatchToProps)(Right)

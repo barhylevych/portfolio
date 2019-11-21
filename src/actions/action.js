@@ -1,4 +1,4 @@
-import {GET_WEATHER, STOP_LOADING, START_LOADING, REDIRECT} from "../immortal/actions_immortals";
+import {GET_WEATHER, STOP_LOADING, START_LOADING, REDIRECT} from "../globalStore/actions_immortals";
 
 export function stopLoading() {
     return {type: STOP_LOADING}

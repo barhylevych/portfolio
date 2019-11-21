@@ -54,6 +54,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "eslint": "^6.6.0",
     "gh-pages": "^2.1.1"
   }
 }
