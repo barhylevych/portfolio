@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa32d50-0662-4371-9d94-9dd72b886aa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/utils.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSide/Left.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstView/FirstView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeftSide/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstView/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSide/Right.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SecondView/Right.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SecondView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightSide/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SecondView/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FirstView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FirstView/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/I18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/I18n.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +163,8 @@
       <updated>1573813808459</updated>
       <workItem from="1573813809790" duration="3034000" />
       <workItem from="1574060771271" duration="36724000" />
-      <workItem from="1574331904759" duration="11658000" />
+      <workItem from="1574331904759" duration="12336000" />
+      <workItem from="1574684375845" duration="384000" />
     </task>
     <servers />
   </component>

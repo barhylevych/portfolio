@@ -29,12 +29,7 @@ const mapStateToProps = (state) => (
 		loading: state.loading,
 	})
 
-const mapDispatchToProps = (dispatch) => (
-	{
-		startLoading: () => dispatch(startLoading()),
-	})
-
-export default connect(mapStateToProps, mapDispatchToProps)((props) => {
+export default connect(mapStateToProps, {startLoading})((props) => {
 	const loading = props.loading
 	return (
 		<div className={'project'}>
